@@ -1,0 +1,17 @@
+class Main {
+    public static void main(String[] args) {
+        //GCD
+        int n1 = 45;
+        int n2 = 60;
+        int x = n1>n2?n1:n2;
+        int y = n1>n2?n2:n1;
+
+        while (y!=0) {
+            int temp = y;
+            y = x%y;
+            x = temp;
+        }
+        System.out.println("GCD is "+x);
+        System.out.println("LCM is "+(n1*n2)/x);
+    }
+}

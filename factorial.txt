@@ -1,0 +1,14 @@
+class Main {
+    public static void main(String[] args) {
+        //factorial
+        //4 x3 x2 x1 = 24
+        int n = 4;
+        int fac = factorial(n);
+        System.out.println(fac);
+    }
+
+    private static int factorial(int n) {
+        if(n<=1) return 1;
+        else return n*factorial(n-1);
+    }
+}
